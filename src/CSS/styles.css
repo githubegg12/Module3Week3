@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+header {
+    background-color: #3f51b5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main.main-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tab buttons */
+.tab-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 12px;
+    font-weight: bold;
+    background-color: #eee;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+.tab-button.active {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Section visual tab */
+.tab {
+    display: none;
+}
+
+.tab.active-tab {
+    display: block;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#updateBtn {
+    display: none;
+    background-color: #ff9800;
+    color: white;
+    margin-left: 10px;
+}
+
+#updateBtn:hover {
+    background-color: #fb8c00;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Table */
+#inventoryTable {
+    min-width: 600px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#inventoryTable thead {
+    background-color: #f5f5f5;
+}
+
+#inventoryTable th,
+#inventoryTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#inventoryTable tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+#inventoryTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.btn-update,
+.btn-delete {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.btn-update:hover {
+    color: #4caf50;
+}
+
+.btn-delete:hover {
+    color: #f44336;
+}
+
+@media (max-width: 768px) {
+    main.main-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .tab-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    input,
+    .button {
+        font-size: 15px;
+    }
+
+    /* #inventoryTable {
+        font-size: 14px;
+    } */
+
+    #inventoryTable th,
+    #inventoryTable td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Responsive to other platforms */
+@media (max-width: 480px) {
+    main.main-container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .tab-buttons {
+        flex-direction: column;
+    }
+
+    .tab-button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .div1 {
+        flex-direction: column;
+    }
+
+    #updateBtn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+}

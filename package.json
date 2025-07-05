@@ -12,6 +12,7 @@
     "vite": "^7.0.0"
   },
   "dependencies": {
+    "json-server": "^1.0.0-beta.3",
     "swal": "^0.1.0",
     "sweetalert2": "^11.22.2"
   }

@@ -26,11 +26,12 @@ Requirements
 How to use it
 
 1. Clone the project
-git clone https://github.com/githubegg12/M-dulo-3-Semana-2.git
+git clone https://github.com/githubegg12/Module3Week3.git
 
 2. Install dependencies
 npm i
 npm install json-server
+npm install swal
 npm install sweetalert2
 
 
